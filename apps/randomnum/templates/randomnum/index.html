@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Random Number</title>
+	<style type="text/css">
+		#wapper{
+			margin: 20px;
+			padding: 20px;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+	<body id=wapper>
+		<div>
+			<p>Random Word (attempt # {{ request.session.counter }}</p>
+			<textarea id="commentarea" name="comments" rows="2" cols="30">{{ unique_id }}</textarea>
+		</div>	
+	</body>
+</html>
